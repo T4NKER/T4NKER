@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" type="text/css" rel="stylesheet">
+
+
+    <title>GraphQL</title>
+</head>
+
+<body>
+<div id="login-container" class="login-container">
+    <div class="login-title">Login</div>
+    <div class = "login-content">
+        <label for="username/email" class="login-label">
+            Username/email
+        </label>
+        <input id="username-email" type="text" type="username-email" placeholder="Enter your username or email address" 
+        class="login-input" required/>
+    </div>
+    <div class="login-content">
+        <label for="password" class="login-label">Password</label>
+        <input id="login-password" name="password" type="password" class="login-input" required />
+      </div>
+      <button id="login-button" name="login" class="login-card-button">Login</button>
+</div>
+
+<div id="full-container" class="master-container">
+    <div id="personal-info" class="info">
+    </div>
+    <div class="master-chart-container">
+    <div id="chart-container" class="chart">
+        <canvas id="xpChart" width="200" height="100"></canvas>
+    </div>
+    <div id="chart-container-2" class="chart">
+        <canvas id="auditChart" width="200" height="100"></canvas>
+    </div>
+    <div id="logout-container">
+        <button id="logoutbutton">Logout</button>
+    </div>
+</div>
+</div>
+
+</body>
+<script type="module" src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+</html>
