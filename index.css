@@ -19,6 +19,28 @@
     display:none;
 }
 
+.login-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    text-align: center;
+    background-color: #234790;
+    color: white;
+}
+
+.login-content {
+    padding:10px;
+
+}
+
+#username-email {
+    padding: 5px;
+}
+
+#login-password {
+    padding: 5px;
+}
+
+
 .info {
     border-style: solid;
     border-color: white;

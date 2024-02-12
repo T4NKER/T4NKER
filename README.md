@@ -1,6 +1,6 @@
 ## GraphQL
 
-### To run, enter "node server.js" in terminal.
+### Go to T4NKER.github.io to see the GraphQL project.
 
 <!--
 **T4NKER/T4NKER** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
