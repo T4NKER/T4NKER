@@ -17,6 +17,7 @@
     flex-direction:row;
     align-items:center;
     display:none;
+    padding-top: 100px;
 }
 
 .login-container {

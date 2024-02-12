@@ -27,8 +27,7 @@ async function login(username, password) {
             localStorage.setItem('JWTtoken', token);
             isLoggedin = true
             requestGLData();
-            document.getElementById('login-container').style.visibility = 'hidden';
-            console.log(encodedCredentials)
+            document.getElementById('login-container').style.display = 'none';
 
         } else {
             const errorData = await response.json()
@@ -75,8 +74,6 @@ async function requestGLData() {
     })
         .then(response => response.json())
         .then(userData => {
-            // Handle the data for the "user" field here
-            console.log(userData);
 
             document.getElementById("full-container").style.display = "block";
 
@@ -128,11 +125,8 @@ async function requestGLData() {
 
             for (let transaction of sortedArray) {
                 let xpValue = transaction.amount;
-                console.log(transaction.amount)
                 xpVals.push(xpValue);
             }
-
-            console.log(xpVals);
 
             for (let xpValue of xpVals) {
                 sum += xpValue;
@@ -144,11 +138,6 @@ async function requestGLData() {
                 return date.toLocaleDateString(undefined, { day: 'numeric', month: 'numeric', year: 'numeric' });
             });
             const xpValues = sortedArray.map(transaction => transaction.value);
-
-            console.log("Dates:", dates);
-            console.log("Cumulative XP Sum:", cumulativeXpSum);
-
-
 
             new Chart("xpChart", {
                 type: "line",
@@ -275,5 +264,5 @@ function logout() {
     localStorage.clear();
     document.getElementById("full-container").style.display = "none";
     document.getElementById("login-container").style.visibility = "visible";
-    const personalInfo = document.getElementById("personal-info").innerHTML = "";
+    document.getElementById("personal-info").innerHTML = "";
 }
