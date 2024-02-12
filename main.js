@@ -263,6 +263,6 @@ logoutbutton.addEventListener("click", () =>{
 function logout() {
     localStorage.clear();
     document.getElementById("full-container").style.display = "none";
-    document.getElementById("login-container").style.visibility = "visible";
+    document.getElementById("login-container").style.display = "block";
     document.getElementById("personal-info").innerHTML = "";
 }
